@@ -314,16 +314,15 @@ if __name__ == "__main__":
     mus_9 = np.ones(num_RBFs_9)  # Spread of each RBF
     theta_9 = np.zeros(4 * num_RBFs_9)  # Coefficients for 9RBFs
 
-
     # Simulation parameters
     gamma = 0.9
     alpha = 0.1
     epsilon = 0.1
     episodes = 100
-    p_array = [random.random() for _ in range(200)]
+    p_array = [random.random() for _ in range(300)]
 
     # PLOT OF NUMBER OF ACTIONS THE ROBOT TAKES IN EACH EPISODE
-    # START
+# START
 
     # # Actions storage
     # actions_per_episode_normal = []
@@ -356,10 +355,10 @@ if __name__ == "__main__":
     # plt.legend()
     # plt.grid(True)
     # plt.show()
-    # END
+# END
 
     # PLOT THE REWARD OF ALL LEARNING EPISODES
-    # START
+# START
 
     # Rewards storage
     rewards_per_episode_normal = []
